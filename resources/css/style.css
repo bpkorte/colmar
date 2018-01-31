@@ -4,11 +4,23 @@ html {
   font-size: 16px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* Header */
 
 header {
   color: gray;
   background-color: white;
+}
+
+header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +33,15 @@ header nav ul {
 
 header nav li {
   padding-left: 1rem;
+}
+
+header nav li a {
   color: gray;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
@@ -49,9 +69,45 @@ header .mobile {
   }
 }
 
-/* Section 1 */
+/* Section 1: Banner */
 
+.banner {
+  background-color: lightgray;
+}
 
+.banner .container {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.content {
+  color: rgb(77, 77, 77);
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.content h4 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+.content a {
+  color: white;
+  background-color: rgb(77, 77, 77);
+  padding: 0.5rem 7rem;
+  text-align: center;
+}
 
 /* Section 2 */
 
@@ -70,6 +126,9 @@ header .mobile {
 footer {
   color: gray;
   background-color: white;
+}
+
+footer .container {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.5rem;
@@ -81,6 +140,10 @@ footer nav ul {
 
 footer nav li {
   padding-left: 1rem;
+}
+
+footer nav li a {
+  color: gray;
 }
 
 @media only screen and (max-width: 760px) {
