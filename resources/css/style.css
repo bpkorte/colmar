@@ -178,7 +178,7 @@ header .mobile {
   color: rgb(102, 224, 255);
 }
 
-.listing:last-child {
+.information .listings .listing:last-child {
   background-color: lightgray;
 }
 
@@ -186,13 +186,76 @@ header .mobile {
   display: none;
 }
 
-/* Section 3 */
+/* Section 3: learning */
 
+.learning {
+  background-color: lightgray;
+}
 
+.learning .container {
+  display: block;
+  justify-content: center;
+  padding: 2rem 0;
+}
 
-/* Section 4 */
+.learning .container h1 {
+  text-align: center;
+  padding: 0;
+}
 
+.courses {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 4.5rem;
+  color: gray;
+}
 
+.course {
+  background-color: white;
+  display: block;
+  max-width: 250px;
+}
+
+.course img {
+  height: auto;
+  width: 100%;
+}
+
+.course h4, .course p {
+  padding-bottom: 0.5rem;
+}
+
+.course .detail {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 760px) {
+
+}
+
+/* Section 4: thesis */
+
+.thesis .container {
+  display: flex;
+}
+
+.thesis h1 {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.thesis .listings .listing:first-child {
+  background-color: lightgray;
+}
+
+.thesis .images {
+  padding-top: 0;
+}
+
+.thesis .images video {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
 
 /* Footer */
 
