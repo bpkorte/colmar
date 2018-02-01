@@ -8,9 +8,29 @@ a:link {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  padding-bottom: 1.5rem;
+  color: rgb(77, 77, 77);
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 900;
+  color: rgb(77, 77, 77);
+  padding-bottom: 1rem;
+}
+
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.images {
+  width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 /* Header */
@@ -69,7 +89,7 @@ header .mobile {
   }
 }
 
-/* Section 1: Banner */
+/* Section 1: banner */
 
 .banner {
   background-color: lightgray;
@@ -81,25 +101,12 @@ header .mobile {
 }
 
 .banner img {
-  width: 60%;
-  padding: 2rem 1.5rem;
+  width: 100%;
 }
 
 .content {
+  width: 40%;
   color: rgb(77, 77, 77);
-}
-
-.content h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  padding-bottom: 1rem;
-}
-
-.content h4 {
-  font-size: 1rem;
-  line-height: 1.4;
-  font-weight: 900;
-  padding-bottom: 1rem;
 }
 
 .content a {
@@ -109,9 +116,75 @@ header .mobile {
   text-align: center;
 }
 
-/* Section 2 */
+@media only screen and (max-width: 760px) {
 
+  .banner .container {
+    flex-wrap: wrap;
+  }
 
+  .banner .container .images, .banner .container .content {
+    width: 100%;
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+  }
+
+  .content a {
+    background-color: gray;
+  }
+}
+
+/* Section 2: information */
+
+.information .container {
+  display: flex;
+}
+
+.information .images img {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.images p {
+  color: lightgray;
+  padding-bottom: 2rem;
+}
+
+.listings {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.listing {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.listing img {
+  width: 35%;
+  height: auto;
+  padding: 1rem;
+}
+
+.listing p {
+  padding-bottom: 0.5rem;
+}
+
+.listing a {
+  color: rgb(102, 224, 255);
+}
+
+.listing:last-child {
+  background-color: lightgray;
+}
+
+.listing #mobile {
+  display: none;
+}
 
 /* Section 3 */
 
